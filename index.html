@@ -12,6 +12,40 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <p id="message"></p>
+      <section class="unauthenticated">
+        <form id="sign-up">
+        <input name="credentials[email]" placeholder="email here" type="email">
+        <input name="credentials[password]" placeholder="password here" type="password">
+        <input name="credentials[password_confirmation]" placeholder="confirm password here" type="password">
+        <button type="submit">Sign up</button>
+      </form>
+        <form id="sign-in">
+          <input name="credentials[email]" placeholder="email here" type="email">
+          <input name="credentials[password]" placeholder="password here" type="password">
+          <button type="submit">Sign In</button>
+        </form>
+      </section>
+      <section class="authenticated">
+        <form id = "change-password">
+        <input name="passwords[old]" placeholder="old password" type="text">
+        <input name="passwords[new]" placeholder="new password" type="text">
+        <button type="submit">Change Password</button>
+      </form>
+        <form id="sign-out">
+          <button type="submit">Sign Out</button>
+        </form>
+      </section>
+      <div id="beverage">
+        <div>
+          <h2>What are you drinking?</h2>
+          <form id="beverage-name">
+            <input placeholder="My beverage is.." type="text">
+            <input placeholder="How many ounces?" type="text">
+          <button type="submit">Log This Bev</button>
+        </form>
+        </div>
+      </div>
+
     </body>
 </html>
