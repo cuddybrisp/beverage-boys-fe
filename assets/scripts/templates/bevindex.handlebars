@@ -1,0 +1,17 @@
+{{#each beverage as |beverage|}}
+  <section class="beverage-index" data-id="{{bevarage._id}}">
+    <h6>Title:</h6>
+    <h3>
+      {{limit beverage.title 40}}
+    </h3>
+    <h6>content:</h6>
+    <p>
+        {{beverage.content}}
+    </p>
+    <h6>ID:</h6>
+    <p>
+      {{beverage._id}}
+    </p>
+    <!-- {{> bevdelete }} -->
+  </section>
+{{/each}}
