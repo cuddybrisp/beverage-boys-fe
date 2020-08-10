@@ -7,28 +7,39 @@ const getFormFields = require('../../../lib/get-form-fields')
 
 const onBevCreate = function (event) {
   event.preventDefault()
-  console.log(event.target)
   const formData = getFormFields(event.target)
-  console.log(formData)
   api.createBeverage(formData)
     .then(ui.newBevSuccess)
     .catch(ui.newBevFailure)
 }
-const onShowBev = function (event) {
-  event.preventDefault()
-  console.log('onShowBev ran')
-  const formData = getFormFields(event.target)
-  console.log(formData)
-}
+// const onShowBev = function (event) {
+//   event.preventDefault()
+//   const formData = getFormFields(event.target)
+// }
 const indexBev = function (event) {
   event.preventDefault()
-  console.log(event.target)
   api.onIndexBev()
     .then(ui.indexSuccess)
     .catch(console.error)
 }
+const onDeleteBev = function (event) {
+  event.preventDefault()
+  const bevId = $(event.target).data('id')
+  api.deleteBev(bevId)
+    .then(() => indexBev(event))
+    .catch(ui.deleteFail)
+}
+const onUpdateBev = function (event) {
+  event.preventDefault()
+  const data = getFormFields(event.target)
+  const beverage = data
+  api.updateBev(beverage)
+    .then(ui.updateSuccess)
+    .catch(ui.updateFail)
+}
 module.exports = {
   onBevCreate,
-  onShowBev,
-  indexBev
+  indexBev,
+  onDeleteBev,
+  onUpdateBev
 }

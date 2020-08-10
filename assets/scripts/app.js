@@ -10,6 +10,7 @@ const bevEvents = require('./beverages/events')
 
 $(() => {
   $('.authenticated').hide()
+  $('#returning').on('click').show('.authenticated')
   $('#sign-up').on('submit', authEvents.onSignup)
   $('#sign-in').on('submit', authEvents.onSignIn)
   $('#change-password').on('submit', authEvents.onChangePassword)
@@ -18,5 +19,6 @@ $(() => {
   $('#bev-create').on('submit', bevEvents.onBevCreate)
   $('#show-beverage').on('click', bevEvents.onShowBev)
   $('#bev-index').on('click', bevEvents.indexBev)
-  // $('#drink-index').on('click', '.btn-danger', bevEvents.onDeleteBev)
+  $('#drink-index').on('click', '.btn.btn-danger', bevEvents.onDeleteBev)
+  $('#update-bev').on('submit', bevEvents.onUpdateBev)
 })

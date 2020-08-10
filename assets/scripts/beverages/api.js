@@ -13,11 +13,11 @@ const createBeverage = function (formData) {
     data: { beverage }
   })
 }
-const updateBeverage = function (data) {
+const updateBev = function (beverage) {
   return $.ajax({
-    url: config.apiUrl + '/beverages/' + data.beverage.id,
+    url: config.apiUrl + '/beverages/' + beverage.id,
     method: 'PATCH',
-    data: data,
+    data: { beverage: beverage },
     headers: {
       Authorization: 'Bearer ' + store.user.token
     }
@@ -27,6 +27,15 @@ const onShowBev = function (formData) {
   return $.ajax({
     url: config.apiUrl + '/beverages/' + formData,
     method: 'GET',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+const deleteBev = function (bevId) {
+  return $.ajax({
+    url: config.apiUrl + '/beverages/' + bevId,
+    method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token
     }
@@ -43,7 +52,8 @@ const onIndexBev = function () {
 }
 module.exports = {
   createBeverage,
-  updateBeverage,
+  updateBev,
   onShowBev,
-  onIndexBev
+  onIndexBev,
+  deleteBev
 }

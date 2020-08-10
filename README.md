@@ -1,7 +1,6 @@
 # Beverage Boys: Hydration Station
 
-This application allows the user to do x, y, and z. Maybe here's a reason why I
-wanted to do this project, or came up with this idea.
+
 
 ## Important Links
 
