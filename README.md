@@ -4,19 +4,13 @@
 
 ## Important Links
 
-- [Other Repo](www.link.com)
-- [Deployed API](www.link.com)
-- [Deployed Client](www.link.com)
+- [Beverage Boy API Repo](https://github.com/cuddybrisp/beverage-boys-api)
+- [Heroku App URL](https://mysterious-headland-69458.herokuapp.com/)
+- [Client](https://cuddybrisp.github.io/beverage-boys-fe/)
 
 ## Planning Story
 
-Lorem ipsum dolor amet cloud bread letterpress squid actually, single-origin
-coffee williamsburg af poutine fingerstache austin semiotics paleo man braid
-vexillologist. Tumeric literally banjo pickled disrupt cold-pressed thundercats
-shoreditch try-hard health goth intelligentsia pop-up small batch skateboard
-farm-to-table. Meh tofu fam, direct trade tattooed stumptown etsy everyday
-carry activated charcoal. Neutra cornhole polaroid literally salvia, listicle
-tofu.
+Timing plan: wanting to start with my backend, because i have curl scripts already fleshed out that can be tested through the terminal, and i have that example schema to grow from, then move on to my auth steps and begin putting together my HTML for the forms that can be filled by the user. And keep styling from there. Will use my new knowledge of handlebars, as well as Promises and models in the backend.
 
 ### User Stories
 
@@ -33,18 +27,19 @@ tofu.
 - HTML/CSS
 - Bootstrap
 - Javascript
+- Handlebars
 
 ### Unsolved Problems
 
-- Still need to ....
-- Would like to eventually ....
+- Still need to add some styling to make the UX more appealing, and get a better understanding of the technologies used here.
+- Would like to eventually be able to calculate the contents of your drinks to see if you're staying hydrated.
 
 ## Images
 
 #### Wireframe:
-![wireframe](https://lucidchart.zendesk.com/hc/article_attachments/360001080866/Facebook_Wireframe_-_New_Page.png)
+![wireframe](https://imgur.com/IfiHUND)
 
 ---
 
 #### ERD:
-![ERD](https://www.smartdraw.com/entity-relationship-diagram/img/cardinality.jpg?bn=1510011144)
+![ERD](https://imgur.com/ejK6dsJ)
