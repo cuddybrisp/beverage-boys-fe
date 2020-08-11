@@ -28,8 +28,8 @@
       </section>
       <section class="authenticated">
         <form id = "change-password">
-        <input name="passwords[old]" placeholder="old password" type="text">
-        <input name="passwords[new]" placeholder="new password" type="text">
+        <input name="passwords[old]" placeholder="old password" type="password">
+        <input name="passwords[new]" placeholder="new password" type="password">
         <button type="submit">Change Password</button>
       </form>
         <form id="sign-out">
@@ -43,6 +43,7 @@
       <div id="beverage">
         <div>
           <h2>What are you drinking?</h2>
+          <p id="update-message"></p>
           <form id="bev-create">
             <input placeholder="My beverage is.." type="text" name="name">
             <input placeholder="How many ounces?" type="text" name="ounces">

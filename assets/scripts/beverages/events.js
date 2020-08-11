@@ -20,13 +20,14 @@ const indexBev = function (event) {
   event.preventDefault()
   api.onIndexBev()
     .then(ui.indexSuccess)
-    .catch(console.error)
+    .catch(ui.indexFail)
 }
 const onDeleteBev = function (event) {
   event.preventDefault()
   const bevId = $(event.target).data('id')
   api.deleteBev(bevId)
     .then(() => indexBev(event))
+    .then(ui.deleteSuccess)
     .catch(ui.deleteFail)
 }
 const onUpdateBev = function (event) {
@@ -35,6 +36,7 @@ const onUpdateBev = function (event) {
   const beverage = data
   api.updateBev(beverage)
     .then(ui.updateSuccess)
+    .then(() => indexBev(event))
     .catch(ui.updateFail)
 }
 module.exports = {

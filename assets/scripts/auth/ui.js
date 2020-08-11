@@ -2,7 +2,6 @@
 const store = require('../store')
 const signUpSuccess = function () {
   $('#message').text('Signed up!!')
-  $('#sign-up').hide()
   $('form').trigger('reset')
 }
 
@@ -14,7 +13,6 @@ const signInSuccess = function (response) {
   $('#message').text('Signed In')
   store.user = response.user
   $('.authenticated').show()
-  $('.unauthenticated').hide()
   $('form').trigger('reset')
 }
 const signInFailure = function () {

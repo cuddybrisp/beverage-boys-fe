@@ -22,6 +22,7 @@ const indexFail = function () {
 }
 const updateSuccess = function () {
   $('form').trigger('reset')
+  $('#update-message').text('Beverage Updated 🤙')
 }
 const updateFail = function () {
   $('#message').text('Update failed')
@@ -29,11 +30,15 @@ const updateFail = function () {
 const deleteFail = function () {
   $('#message').text('Somethings wrong, cant delete this')
 }
+const deleteSuccess = function () {
+  $('#update-message').text('That Bev is gone')
+}
 module.exports = {
   newBevSuccess,
   indexSuccess,
   updateSuccess,
   updateFail,
   deleteFail,
-  indexFail
+  indexFail,
+  deleteSuccess
 }
