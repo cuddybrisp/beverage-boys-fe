@@ -11,7 +11,7 @@ const newBevSuccess = function () {
 }
 const newBevFailure = function () {
   $('form').trigger('reset')
-  $('#message').text('New beverage failed to create.')
+  $('#update-message').text('New beverage failed to create.')
 }
 const indexSuccess = function (data) {
   $('#drink-index').empty()
