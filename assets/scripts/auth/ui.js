@@ -32,10 +32,7 @@ const signOutFailure = function () {
 const signOutSuccess = function () {
   $('#message').text('Signed Out!')
   $('.unauthenticated').show()
-<<<<<<< HEAD
   $('.authenticated').hide()
-=======
->>>>>>> auth-steps
   store.user = null
 }
 
