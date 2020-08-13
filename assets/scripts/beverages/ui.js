@@ -9,6 +9,10 @@ const newBevSuccess = function () {
   $('form').trigger('reset')
   $('#message').text('New Bev Logged 🤙')
 }
+const newBevFailure = function () {
+  $('form').trigger('reset')
+  $('#message').text('New beverage failed to create.')
+}
 const indexSuccess = function (data) {
   $('#drink-index').empty()
   const bevIndexhtml = handlebar({ beverage: data.beverage })
@@ -35,6 +39,7 @@ const deleteSuccess = function () {
 }
 module.exports = {
   newBevSuccess,
+  newBevFailure,
   indexSuccess,
   updateSuccess,
   updateFail,
