@@ -1,0 +1,17 @@
+{{#each snack as |snack|}}
+  <section class="snax-index" data-id="{{snack._id}}">
+    <h6>Beverage:</h6>
+    <h3>
+      {{limit snack.name 40}}
+    </h3>
+    <h6>Ounces:</h6>
+    <p>
+        {{snack.servings}}
+    </p>
+    <h6>ID:</h6>
+    <p>
+      {{snack._id}}
+    </p>
+{{> snackdelete id=snack._id }}
+  </section>
+{{/each}}

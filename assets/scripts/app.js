@@ -4,6 +4,7 @@
 // const example = require('./example')
 const authEvents = require('./auth/events')
 const bevEvents = require('./beverages/events')
+const snackEvents = require('./snacks/events')
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
@@ -21,4 +22,7 @@ $(() => {
   $('#bev-index').on('click', bevEvents.indexBev)
   $('#drink-index').on('click', '.btn.btn-danger', bevEvents.onDeleteBev)
   $('#update-bev').on('submit', bevEvents.onUpdateBev)
+  $('#snack-create').on('submit', snackEvents.onCreateSnack)
+  $('#update-snack').on('submit', snackEvents.onUpdateSnack)
+  $('#snax-index').on('click', '.btn.btn-danger', snackEvents.onDeleteSnack)
 })

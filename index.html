@@ -40,7 +40,7 @@
       <!-- <form id="newbeverage">
         <button type="submit">New Bev</button>
       </form> -->
-      <section class="beverage-log authenticated">
+      <section class="beverage-log authenticated bev-and-snacks">
       <div id="beverage">
         <div>
           <h2>What are you drinking?</h2>
@@ -50,6 +50,12 @@
             <input placeholder="How many ounces?" type="text" name="ounces">
           <button type="submit">Log This Bev</button>
         </form>
+        <h3>You got some snacks too?</h3>
+        <form id="snack-create">
+          <input placeholder="My snack is.." type="text" name="name">
+          <input placeholder="How many snacks?" type="text" name="servings">
+        <button type="submit">Log This Snack</button>
+      </form>
         <form id="update-bev">
   <input type="text" name="name" placeholder="I'm drinking..">
   <input type="text" name="ounces" placeholder="How many ounces?">
@@ -59,10 +65,13 @@
 </form>
         </div>
         <div>
-          <button id="bev-index">What Bevs Are Here</button>
+          <button id="bev-index">What Bevs are here</button>
+          <button id="snack-index">What Snacks are here?</button>
         </div>
       </div>
       <div id="drink-index">
+      </div>
+      <div id="snax-index">
       </div>
     </section>
 
