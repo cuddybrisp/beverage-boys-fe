@@ -6,7 +6,7 @@ curl "http://localhost:4741/snacks" \
   --header "Content-Type: application/json" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
-    "beverage": {
+    "snack": {
       "name": "'"${NAME}"'",
       "servings": "'"${SERVINGS}"'"
     }

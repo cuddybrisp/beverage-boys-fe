@@ -10,7 +10,7 @@ const createSnack = function (formData) {
     },
     url: config.apiUrl + '/snacks',
     method: 'POST',
-    data: snack
+    data: { snack }
   })
 }
 const updateSnack = function (snack) {

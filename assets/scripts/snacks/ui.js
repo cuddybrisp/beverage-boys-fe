@@ -27,7 +27,7 @@ const indexFail = function () {
   $('#message').text('Error occurred, cant show the snacks')
 }
 const updateSuccess = function () {
-  ('form').trigger('reset')
+  $('form').trigger('reset')
   $('#update-message').text('Snack Updated')
 }
 const updateFail = function () {

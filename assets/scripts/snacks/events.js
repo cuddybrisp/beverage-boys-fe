@@ -17,6 +17,7 @@ const onUpdateSnack = function (event) {
   const data = getFormFields(event.target)
   const snack = data
   api.updateSnack(snack)
+    .then(() => onIndexSnack(event))
     .then(ui.updateSuccess)
     .catch(ui.updateFailure)
 }
