@@ -6,11 +6,11 @@ const createSnack = function (formData) {
   const snack = formData
   return $.ajax({
     headers: {
-      Authorization: 'Bearer' + store.user.token
+      Authorization: 'Bearer ' + store.user.token
     },
     url: config.apiUrl + '/snacks',
     method: 'POST',
-    data: { snack }
+    data: snack
   })
 }
 const updateSnack = function (snack) {
@@ -25,7 +25,7 @@ const updateSnack = function (snack) {
 }
 const indexSnack = function () {
   return $.ajax({
-    url: config.apiUrl + '/snacks/',
+    url: config.apiUrl + '/snacks',
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token

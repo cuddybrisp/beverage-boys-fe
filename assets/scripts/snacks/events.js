@@ -22,7 +22,7 @@ const onUpdateSnack = function (event) {
 }
 const onIndexSnack = function (event) {
   event.preventDefault()
-  api.onIndexSnack()
+  api.indexSnack()
     .then(ui.indexSuccess)
     .catch(ui.indexFail)
 }

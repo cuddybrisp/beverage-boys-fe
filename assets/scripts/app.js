@@ -25,4 +25,5 @@ $(() => {
   $('#snack-create').on('submit', snackEvents.onCreateSnack)
   $('#update-snack').on('submit', snackEvents.onUpdateSnack)
   $('#snax-index').on('click', '.btn.btn-danger', snackEvents.onDeleteSnack)
+  $('#snack-index').on('click', snackEvents.onIndexSnack)
 })

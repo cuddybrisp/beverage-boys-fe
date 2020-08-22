@@ -15,7 +15,9 @@ const newBevFailure = function () {
 }
 const indexSuccess = function (data) {
   $('#drink-index').empty()
-  const bevIndexhtml = handlebar({ beverage: data.beverage })
+  const bevIndexhtml = handlebar({
+    beverage: data.beverage
+  })
   $('#drink-index').html(bevIndexhtml)
   if (data.beverage.length === 0) {
     $('#message').text('We need to make a bev first')
