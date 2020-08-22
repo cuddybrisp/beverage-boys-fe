@@ -15,11 +15,11 @@ Timing plan: wanting to start with my backend, because i have curl scripts alrea
 ### User Stories
 
 - As a user I want to sign in/up
-- As a user I want to Create a new Beverage
-- As a user I want to Read multiple Beverages I've (drank, drinking)
-- As a user I want to Read a single Bevereage
-- As a user I want to Update a Beverage I own (maybe finished it, went flat?)
-- As a user I want to Delete a Beverage I own
+- As a user I want to Create a new Snack & Beverage
+- As a user I want to Read multiple Snacks &Beverages I've (drank, drinking)
+- As a user I want to Read a single Snack & Bevereage
+- As a user I want to Update a Snack & Beverage I own (maybe finished it, went flat?)
+- As a user I want to Delete a Snack & Beverage I own
 
 ### Technologies Used
 
